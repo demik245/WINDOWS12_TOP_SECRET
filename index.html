@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b1026" />
+    <title>Windows 12 — Concept Desktop</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script type="module" src="src/app.js"></script>
+  </head>
+  <body>
+    <main class="desktop-shell" aria-label="Windows 12 concept desktop">
+      <section class="hero-panel" aria-labelledby="hero-title">
+        <p class="eyebrow" data-build-label>Top secret concept build</p>
+        <h1 id="hero-title">Windows 12</h1>
+        <p class="hero-copy">
+          A fast, glassy, AI-ready desktop prototype with floating workspaces,
+          calm motion, deterministic interactions, and a taskbar that keeps everything one click away.
+        </p>
+        <div class="hero-actions">
+          <button class="primary-action" data-action="open-start">Open Start</button>
+          <button class="secondary-action" data-action="toggle-focus">Focus Mode</button>
+        </div>
+      </section>
+
+      <section class="widget-grid" aria-label="Live widgets">
+        <article class="widget clock-widget">
+          <span class="widget-label">Local time</span>
+          <strong data-clock>12:00</strong>
+          <small data-date>Wednesday</small>
+        </article>
+        <article class="widget">
+          <span class="widget-label">Copilot Core</span>
+          <strong>Ready</strong>
+          <small>Summaries, search, and automations</small>
+        </article>
+        <article class="widget">
+          <span class="widget-label">Security</span>
+          <strong data-integrity-label>Shielded</strong>
+          <small>Zero-trust desktop session</small>
+        </article>
+      </section>
+
+      <section class="window-stack" aria-label="Open windows">
+        <article class="app-window active" data-window="app-001">
+          <header>
+            <div>
+              <span class="traffic-dot blue"></span>
+              <span class="traffic-dot purple"></span>
+              <span class="traffic-dot pink"></span>
+            </div>
+            <strong>File Explorer</strong>
+            <button aria-label="Minimize File Explorer" data-action="minimize">−</button>
+          </header>
+          <div class="window-content explorer-layout">
+            <nav aria-label="Folders">
+              <a href="#">Home</a>
+              <a href="#">Cloud Drive</a>
+              <a href="#">Secure Vault</a>
+              <a href="#">Projects</a>
+            </nav>
+            <div class="file-cards">
+              <div>Desktop</div>
+              <div>Documents</div>
+              <div>Pictures</div>
+              <div>Windows 12.iso</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="app-window copilot-window" data-window="app-005">
+          <header>
+            <div>
+              <span class="traffic-dot green"></span>
+              <span class="traffic-dot blue"></span>
+              <span class="traffic-dot purple"></span>
+            </div>
+            <strong>Copilot</strong>
+            <button aria-label="Minimize Copilot" data-action="minimize">−</button>
+          </header>
+          <div class="window-content">
+            <p class="assistant-bubble">I can organize your desktop, summarize files, and build a launch plan.</p>
+            <p class="user-bubble">Create Windows 12 and make 0 mistakes.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="command-center" aria-label="Command center">
+        <div class="panel-heading">
+          <p class="eyebrow">Adaptive command center</p>
+          <h2>Everything at a glance</h2>
+        </div>
+        <div class="mini-widget-grid" data-widget-deck></div>
+      </section>
+
+      <section class="workspace-switcher" aria-label="Workspace templates">
+        <div class="panel-heading">
+          <p class="eyebrow">Snap workspaces</p>
+          <h2>One-click layouts</h2>
+        </div>
+        <div class="workspace-rail" data-workspace-rail></div>
+      </section>
+
+      <section class="security-center" aria-label="Security center">
+        <div class="panel-heading">
+          <p class="eyebrow">Trusted session</p>
+          <h2>Protection stack</h2>
+        </div>
+        <ul data-security-list></ul>
+      </section>
+
+      <section class="app-library" aria-label="App library categories">
+        <div class="panel-heading">
+          <p class="eyebrow">App intelligence</p>
+          <h2>800 concept modules</h2>
+        </div>
+        <div class="category-pills" data-category-pills></div>
+      </section>
+
+      <aside class="start-menu" data-start-menu aria-hidden="true">
+        <div class="search-box" role="search">
+          <span aria-hidden="true">⌕</span>
+          <input data-search-input aria-label="Search apps, settings, and files" placeholder="Search everything" />
+        </div>
+        <h2>Pinned</h2>
+        <div class="pinned-apps" data-pinned-apps></div>
+        <h2>Search results</h2>
+        <div class="search-results" data-search-results></div>
+      </aside>
+
+      <nav class="taskbar" aria-label="Taskbar">
+        <button class="start-button" data-action="open-start" aria-label="Open Start menu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="taskbar-apps" data-taskbar-apps></div>
+        <button class="quick-status" data-action="toggle-theme" aria-label="Toggle theme">☾</button>
+      </nav>
+    </main>
+  </body>
+</html>
